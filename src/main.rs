@@ -1,6 +1,6 @@
 use std::fs::File; // For file managemnet
 use std::env;   //For enviroment & argument
-use std::io::{BufRead, BufReader};
+use std::io::{BufRead, BufReader};  //For File reading
 use sha2::{Sha256, Digest}; //Reading sha256
 use std::process::exit;  //Process
 
@@ -41,6 +41,3 @@ fn main() {
     }
     println!("[X]Password hash not found!. Advised to try different wordlist");
 }
-
-
-// req_hash, dictionary--->hash, compare with req_hash
