@@ -16,7 +16,7 @@ fn main() {
     let req_hash = &argue[1];
     let pass_file_loc = &argue[2];
     let mut current_state = 1;
-    println!("Process started: Attemting to crack {}", req_hash);
+    println!("Process started: Attemting to crack the hash: {}", req_hash);
     println!("Specified wordlist: {}", pass_file_loc);
 
     if (pass_file_loc == "-h") || (pass_file_loc == "--help") {
