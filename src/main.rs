@@ -25,8 +25,8 @@ fn main() {
     }
 
 //File management
-    let pass_file = File::open(pass_file_loc).unwrap();
-    let file_reader = BufReader::new(pass_file);  //Reader for reading the contents of the file
+    
+    let file_reader = file_pass(pass_file_loc);  //Reader for reading the contents of the file
 //Main loop
     for contents in file_reader.lines() {
         match contents{                      //Handling the errors
@@ -48,6 +48,9 @@ fn main() {
     println!("[X]Password hash not found!. Advised to try different wordlist");
 }
 
-
+fn file_pass(path: &String) -> BufReader<File> {
+    let pass_file = File::open(path).expect("Failed to open the file");  // Custom error message
+    BufReader::new(pass_file)
+}
 
     
