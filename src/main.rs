@@ -34,7 +34,7 @@ fn main() {
                 let cont_pass = contents.trim().to_owned().into_bytes();
                 let cont_pass_hash = format!("{:x}", Sha256::digest(&cont_pass));
                 if &cont_pass_hash == req_hash {
-                    println!("Password found[!]----> {} <----Found Password[!]. Total attempts: {}. Found password's hash: {}", std::str::from_utf8(&cont_pass).unwrap(), current_state, cont_pass_hash);
+                    println!("Password found[!]----> {} <----[!]Hash Crackerd. Total attempts: {}. Found password's hash: {}", std::str::from_utf8(&cont_pass).unwrap(), current_state, cont_pass_hash);
                     exit(0);
                 }
                 current_state += 1;
@@ -48,6 +48,6 @@ fn main() {
     println!("[X]Password hash not found!. Advised to try different wordlist");
 }
 
-    
+
 
     
