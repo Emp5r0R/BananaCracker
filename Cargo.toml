@@ -1,7 +1,8 @@
 [package]
-name = "Project_1_sha256_cracker"
-version = "0.1.0"
+name = "sha256_cracker"
+version = "1.1.1"
 edition = "2021"
+#authors = "n_emperor"
 
 [dependencies]
 sha2 = "0.10.8"

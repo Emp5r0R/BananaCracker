@@ -26,18 +26,28 @@ fn main() {
 
 //File management
     let pass_file = File::open(pass_file_loc).unwrap();
-    let file_reader = BufReader::new(pass_file);  //Reader for reading the file
+    let file_reader = BufReader::new(pass_file);  //Reader for reading the contents of the file
 //Main loop
     for contents in file_reader.lines() {
-        let contents = contents.unwrap();
-        let cont_pass = contents.trim().to_owned().into_bytes();
-        let cont_pass_hash = format!("{:x}", Sha256::digest(&cont_pass));
-        if &cont_pass_hash == req_hash {
-            println!("Password found[!]----> {} <----Found Password[!]. Total attempts: {}. Found password's hash: {}", std::str::from_utf8(&cont_pass).unwrap(), current_state, cont_pass_hash);
-            exit(0);
-        }
-        current_state += 1;
-        println!("Current Attempt: [{}], Current password: {} ----> {}", current_state, std::str::from_utf8(&cont_pass).unwrap(), cont_pass_hash); 
+        match contents{                      //Handling the errors
+            Ok(contents) => {
+                let cont_pass = contents.trim().to_owned().into_bytes();
+                let cont_pass_hash = format!("{:x}", Sha256::digest(&cont_pass));
+                if &cont_pass_hash == req_hash {
+                    println!("Password found[!]----> {} <----Found Password[!]. Total attempts: {}. Found password's hash: {}", std::str::from_utf8(&cont_pass).unwrap(), current_state, cont_pass_hash);
+                    exit(0);
+                }
+                current_state += 1;
+                println!("Current Attempt: [{}], Current password: {} ----> {}", current_state, std::str::from_utf8(&cont_pass).unwrap(), cont_pass_hash);
+            }
+            Err(e) => {println!("Unable to read the line! {}", e )}
+
+        };
+         
     }
     println!("[X]Password hash not found!. Advised to try different wordlist");
 }
+
+    
+
+    
