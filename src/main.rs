@@ -19,10 +19,7 @@ fn main() {
     println!("Process started: Attemting to crack the hash: {}", req_hash);
     println!("Specified wordlist: {}", pass_file_loc);
 
-    if (pass_file_loc == "-h") || (pass_file_loc == "--help") {
-        println!("Usage example: cargo run <hash_Sha256> <Path_toThe_wordlist>");
-        exit(1);
-    }
+    
 
 //File management
     
