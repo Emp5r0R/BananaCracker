@@ -8,6 +8,6 @@ This Project takes input of hash for first argument and File location as second 
 - ![image](https://github.com/user-attachments/assets/cf13f716-801e-49aa-bc51-ba1e8bb7997a)
 ### Binary
 - Download the latest version  Binary from tags:- `https://github.com/apocalypsecracker/SHA256_cracker/tags`
-- After extracting the zip run:- `./sha256_cracker <hash> <Path_To_The_wordlist>`
+- After Downloading file then, run it:- `./sha256_cracker <hash> <Path_To_The_wordlist>`
 
  
