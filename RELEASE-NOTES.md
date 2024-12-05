@@ -16,7 +16,9 @@
 - Improved Error handlers
 - Improved output functions of the code
 - Added Modes as a mandatory option
-# Version - 2.3.2 ## Latest
+# Version - 2.3.2 
+## Latest
+**Minor and Patch Update**
 - Improved error handlers for the reading the wordlist
 - Added read error count to display
 - Fixed spam of error outputs in normal modes 
