@@ -91,7 +91,7 @@ dependencies = [
 
 [[package]]
 name = "sha256_cracker"
-version = "2.2.1"
+version = "2.3.2"
 dependencies = [
  "colored",
  "sha2",
