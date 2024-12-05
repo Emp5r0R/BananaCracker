@@ -18,6 +18,6 @@ Modes:
 ```
 chmod +x sha256_cracker
 ```
-- After Downloading file then, run it:- `./sha256_cracker <hash> <Path_To_The_wordlist> <Mode>`
+- then, run :- `./sha256_cracker <hash> <Path_To_The_wordlist> <Mode>`
 
  
