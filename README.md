@@ -2,7 +2,7 @@
 This Project takes input of hash for first argument and File location as second argument.
 
 **Options Usage:**
-Usage --> cargo run <hash> <Path_to_the_wordlist> <Mode> 
+Usage --> cargo run <hash> <Path_to_the_wordlist> <mode> 
 Modes:
  -v,--verbose
  -n,--normal
