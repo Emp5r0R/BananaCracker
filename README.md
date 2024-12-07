@@ -26,6 +26,6 @@ ________________________________________________________________________________
 **Which should I choose, Binary or Source?**
 - In my opinion Choosing binary would be better because it is much easier to use and less likely to get in to issue. Building from source is different and much more complicated, There are also prerequesite for building from source like cargo need to be installed. However if can manage technical things in building and your confident that you can troubleshoot any issues and also if you want new updated version with new features and fixes (Note:might also have bugs too) then this should be your choice  
 
-**What is the versions of executable binaries, which tagged as Pre-release?**
+**What are the versions of executable binaries, which tagged as Pre-release?**
 - Pre-release versions are generally not optimized binaries which can work fine but are slow and takes more disk space than Optimized binaries.
- 
+
