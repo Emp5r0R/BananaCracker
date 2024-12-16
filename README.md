@@ -60,7 +60,5 @@ ________________________________________________________________________________
 - Successful output might look likes this
 - ![image](https://github.com/user-attachments/assets/cf13f716-801e-49aa-bc51-ba1e8bb7997a)
 ___________________________________________________________________________________________________________________________________________________________________________
-
-
-
-
+### For Nerds
+- If you love to read documentation or bunch texts you may read this [Wiki](https://github.com/apocalypsecracker/SHA256_cracker/wiki) as much time spent on making these.
