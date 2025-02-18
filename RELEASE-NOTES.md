@@ -36,3 +36,17 @@
 - Releasing Well Optimized build of Binary executable files for **Linux and Windows x86 systems**
 - Added functionality to read hashes from text files, thus can crack multiple hashes at single operation
 - Improved all output functionalities.
+# Version - 4.4.3(On Progress)
+**Major Update**
+- Repository and tool name changed to BananaCracker
+- Added MD5 cracking functionalities
+- Introduced hash auto detection
+- Updated colorize module to latest version
+- **Multi Fast** mode option have been removed
+- Introducing `--sha256`, `--md5` modules
+- New mode `--automatic-detection`
+- Replaced the logo
+- Minor text colour corrections
+- Updated program core packages
+- New and latest binaries
+
