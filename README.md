@@ -2,7 +2,7 @@
 This is a CLI tool build to crack hashes at lighting speed with minimal effort.
 
 > [!IMPORTANT]
-> From latest versions options have been chanegd.
+> Options have been changed from the latest versions
 
 ### Modes  
 - `-v`, `--verbose`
